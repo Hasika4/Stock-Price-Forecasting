@@ -9,7 +9,7 @@ Google stock price observations, comparing a statistical baseline
 | Model             | MAE    | RMSE   | MAPE  |
 |-------------------|--------|--------|-------|
 | ARIMA(0,1,0)+Drift| $2.01  | $2.98  | 1.25% |
-| CNN-LSTM          | $2.03  | $2.99  | 1.26% |
+| CNN-LSTM          | $2.03  | $2.99  | 1.27% |
 
 > CNN-LSTM performance closely matched the ARIMA baseline — consistent 
 > with the Efficient Market Hypothesis on 1-step-ahead forecasting tasks.

@@ -24,14 +24,14 @@ Google stock price observations, comparing a statistical baseline
 ### 2. ARIMA Baseline
 - Diagnosed ACF/PACF plots on differenced series
 - Selected optimal parameters via AIC grid search across 16 
-  candidate models (p,q ∈ [0,3])
+  candidate models 
 - Confirmed ARIMA(0,1,0) with Drift as optimal
 - Captured statistically significant daily drift of ~0.08% (p=0.002)
 - Residual diagnostics: Ljung-Box, Jarque-Bera, Heteroskedasticity
 - Evaluated via walk-forward out-of-sample testing on 60-day window
 
 ### 3. Hybrid CNN-LSTM
-- 15-step chronological sliding windows → 3D input [Samples, 15, 1]
+- 15-step chronological sliding windows to 3D input [Samples, 15, 1]
 - 1D Conv layer for localised pattern extraction
 - LSTM layer for sequential temporal dependencies
 - Dropout (0.1) on both layers for regularisation
